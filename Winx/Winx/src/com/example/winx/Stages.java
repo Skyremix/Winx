@@ -1,0 +1,68 @@
+package com.example.winx;
+
+import com.example.winx.lvl.ActivityLvl1;
+import com.example.winx.lvl.ActivityLvl2;
+import com.example.winx.lvl.ActivityLvl3;
+
+import android.R.drawable;
+import android.app.Activity;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class Stages extends Activity  {
+
+
+	
+	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.stages);
+        
+        
+        Button btnback = (Button)findViewById(R.id.btnback);
+        btnback.setBackgroundResource(com.example.winx.R.drawable.slect_oval);
+        btnback.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+			startActivity(new Intent(Stages.this,ActivityHome.class));	
+			}
+		});
+        
+        Button btn1 = (Button)findViewById(R.id.btn1);
+        btn1.setBackgroundResource(com.example.winx.R.drawable.slect_oval);
+        btn1.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				startActivity(new Intent(Stages.this,ActivityLvl1.class));
+			}
+		});
+        
+        Button btn2  = (Button)findViewById(R.id.btn2);
+        btn2.setBackgroundResource(com.example.winx.R.drawable.slect_oval);
+        btn2.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+			startActivity(new Intent(Stages.this,ActivityLvl2.class));	
+			}
+		});
+        Button btn3 = (Button)findViewById(R.id.btn3);
+        btn3.setBackgroundResource(com.example.winx.R.drawable.slect_oval);
+        btn3.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+			startActivity(new Intent(Stages.this,ActivityLvl3.class));
+			}
+		});
+        
+    }
+	
+}

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.winx.MainActivity" >
+
+    <item
+        android:id="@+id/back_menu"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/back_menu"/>
+
+</menu>

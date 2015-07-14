@@ -1,0 +1,2 @@
+INDEX VERSION 1.126+D:\Android\Winx\Winx\.metadata\.plugins\org.eclipse.jdt.core
+2411572548.index
